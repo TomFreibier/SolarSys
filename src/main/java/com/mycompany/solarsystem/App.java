@@ -36,5 +36,8 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
     }
-
+    
+    public static Galaxie getGalaxie(){
+        return galaxie;
+    }
 }
