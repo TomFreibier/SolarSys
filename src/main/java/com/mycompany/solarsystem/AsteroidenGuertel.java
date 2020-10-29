@@ -5,6 +5,7 @@
  */
 package com.mycompany.solarsystem;
 
+import java.util.ArrayList;
 /**
  *
  * @author Tom
@@ -12,6 +13,8 @@ package com.mycompany.solarsystem;
 public class AsteroidenGuertel {
     public int anzahl;
     public int position;
+    
+    private ArrayList<Rescource> rescourcen;
     
     public AsteroidenGuertel(int position, int anzahl){
         setAnzahl(anzahl);
@@ -34,6 +37,20 @@ public class AsteroidenGuertel {
 
     public void setPosition(int position) {
         this.position = position;
+    }
+    
+    //ArrayList
+    
+    public ArrayList getRescourcen(){
+        return this.rescourcen;
+    }
+    
+    public void addRescource(Rescource newRescource){
+        this.rescourcen.add(newRescource);
+    }
+    
+    public void removeRescource(Rescource Rescource){
+        this.rescourcen.remove(Rescource);
     }
     
     

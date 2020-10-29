@@ -5,6 +5,7 @@
  */
 package com.mycompany.solarsystem;
 
+import java.util.ArrayList;
 /**
  *
  * @author Tom
@@ -17,6 +18,9 @@ public class Planet {
     public int bewohnbarkeit;
     public int position;
     
+    private ArrayList<Rescource> rescourcen;
+    private ArrayList<Gas> gase;
+    
     public Planet( int position, int groeße, int masse, int gravitation, int temperatur, int bewohnbarkeit){
         setGroeße(groeße);
         setMasse(masse);
@@ -24,6 +28,9 @@ public class Planet {
         setTemperatur(temperatur);
         setBewohnbarkeit(bewohnbarkeit);
         setPosition(position);
+        
+        this.rescourcen = new ArrayList<Rescource>();
+        this.gase = new ArrayList<Gas>();
     }
     
     
@@ -76,6 +83,36 @@ public class Planet {
 
     public void setPosition(int position) {
         this.position = position;
+    }
+    
+    
+    
+    //Array
+    
+    //Rescource
+    public ArrayList getRescourcen(){
+        return this.rescourcen;
+    }
+    
+    public void addRescource(Rescource newRescource){
+        this.rescourcen.add(newRescource);
+    }
+    
+    public void removeRescource(Rescource Rescource){
+        this.rescourcen.remove(Rescource);
+    }
+    
+    //Gas
+    public ArrayList getGase(){
+        return this.gase;
+    }
+    
+    public void addGas(Gas newGas){
+        this.gase.add(newGas);
+    }
+    
+    public void removeGas(Gas Gas){
+        this.gase.remove(Gas);
     }
     
     

@@ -17,7 +17,7 @@ public class Galaxie {
         this.systeme = new ArrayList<System>();
     }
     
-    public ArrayList getSystem(){
+    public ArrayList getSysteme(){
         return this.systeme;
     }
     
