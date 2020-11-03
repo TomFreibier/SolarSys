@@ -27,7 +27,7 @@ public class OptionsViewController implements Initializable {
         // TODO
     }  
     
-    @FXML
+   @FXML
     public void btnSwitchToMainView(ActionEvent event) throws IOException{
         App.setRoot("MainView");
     }

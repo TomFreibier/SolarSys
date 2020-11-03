@@ -27,7 +27,8 @@ public class MainViewController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     } 
-    @FXML
+  
+   @FXML
     public void btnSwitchToOptions(ActionEvent event) throws IOException{
         App.setRoot("OptionsView");
     }
