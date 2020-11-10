@@ -33,13 +33,13 @@ public class RescourceList {
         
         AddRescource("Wasser",200);
         AddRescource("Metall",100);
-        AddRescource("Erdgas",10);;
+        AddRescource("Erdgas",10);
         AddRescource("Edelsteine",5);
         AddRescource("Seltene Erden",5);
     }
     
     
-    
+     //Das ist der Randomiser
     public ArrayList GetLocalRescources(int Min, int Max){
         this.OutputRescourcen = new ArrayList<Rescource>();
         
@@ -57,11 +57,11 @@ public class RescourceList {
             this.rescourcen.remove(index);
             
             //Random Menge
-            IMin = 0;
+            IMin = 1;
             Max = 5;
             int nMenge = IMin + (int)(Math.random() * ((IMax - IMin) + 1));
             
-            int FinalMenge = nRescource.getMenge() + nMenge;
+            int FinalMenge = nRescource.getMenge() * nMenge;
             
             nRescource.setMenge(FinalMenge);
             
