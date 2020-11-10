@@ -27,7 +27,7 @@ public class GasList {
     private void AddGas (String typ, int menge){
         this.gase.add(newGas(typ,menge));
     }
-    
+     
     
     private void FillGas(){
         this.gase = new ArrayList<Gas>();
