@@ -5,6 +5,8 @@
  */
 package com.mycompany.solarsystem;
 
+import java.util.Random;
+
 /**
  *
  * @author Tom
@@ -23,6 +25,29 @@ public final class Stern {
     }
 
     
+    
+    public static void randomLeuchtkraft(String args[]){
+     Random leuchtkraft = new Random();
+     int l = leuchtkraft.nextInt(10)+1;
+        System.out.println(l);
+    }
+    public static void randomTyp(String args[]){
+     Random typ = new Random();
+     int t = typ.nextInt(10)+1;
+        System.out.println(t);
+    }
+    
+    public static void randomGoeße(String args[]){
+     Random groeße = new Random();
+     int g = groeße.nextInt(10)+1;
+        System.out.println(g);
+    }
+    public static void randomPosition(String args[]){
+     Random position = new Random();
+     int laenge = position.nextInt();
+     int breite =position.nextInt();
+        System.out.println(laenge + " " + breite);
+    }
     
     //Getter
     public int getLeuchtkraft() {

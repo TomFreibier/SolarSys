@@ -11,21 +11,21 @@ import java.util.ArrayList;
  * @author Tom
  */
 public class Galaxie {
-    private ArrayList<System> systeme;
+    private ArrayList<Sonnensystem> systeme;
     
     public Galaxie(){
-        this.systeme = new ArrayList<System>();
+        this.systeme = new ArrayList<Sonnensystem>();
     }
     
     public ArrayList getSysteme(){
         return this.systeme;
     }
     
-    public void addSystem(System newSystem){
+    public void addSystem(Sonnensystem newSystem){
         this.systeme.add(newSystem);
     }
     
-    public void removeSystem(System System){
+    public void removeSystem(Sonnensystem System){
         this.systeme.remove(System);
     }
     

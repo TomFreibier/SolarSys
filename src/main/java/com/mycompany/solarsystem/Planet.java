@@ -5,6 +5,7 @@
  */
 package com.mycompany.solarsystem;
 
+import java.util.Random;
 import java.util.ArrayList;
 /**
  *
@@ -33,7 +34,38 @@ public class Planet {
         this.gase = new ArrayList<Gas>();
     }
     
-    
+    public static void randomTemp(String args[]){
+     Random temperatur = new Random();
+     int t = temperatur.nextInt(10)+1;
+        System.out.println(t);
+    }
+    public static void randomBewohn(String args[]){
+     Random bewohnbarkeit = new Random();
+     int b = bewohnbarkeit.nextInt(10)+1;
+     System.out.println(b);
+    }
+    public static void randomGroeße(String args[]){
+     Random groeße = new Random();
+     int g = groeße.nextInt(10)+1;
+     System.out.println(g);
+    }
+    public static void randomMasse(String args[]){
+     Random masse = new Random();
+     int m = masse.nextInt(10)+1;
+     System.out.println(m);
+    }
+    public static void randomGravitation(String args[]){
+     Random gravitation = new Random();
+     int g = gravitation.nextInt(10)+1;
+     System.out.println(g);
+    }
+   
+    public static void randomPosition(String args[]){
+     Random position = new Random();
+     int laenge = position.nextInt();
+     int breite = position.nextInt();
+     System.out.println(laenge + " " + breite );
+    }
     //Getter
     public int getGroeße() {
         return groeße;

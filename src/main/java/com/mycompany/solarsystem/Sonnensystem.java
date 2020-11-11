@@ -11,12 +11,12 @@ import java.util.ArrayList;
  *
  * @author Tom
  */
-public class System {
+public class Sonnensystem {
     private ArrayList<Stern> sterne;
     private ArrayList<AsteroidenGuertel> asteroidenGuertel;
     private ArrayList<Planet> planeten;
     
-    public System(){
+    public Sonnensystem(){
         this.sterne = new ArrayList<Stern>();
         this.asteroidenGuertel = new ArrayList<AsteroidenGuertel>();
         this.planeten = new ArrayList<Planet>();
@@ -56,6 +56,12 @@ public class System {
     
     public void removePlanet(Planet Planet){
         this.planeten.remove(Planet);
+    }
+
+    static class err {
+
+        public err() {
+        }
     }
     
     
