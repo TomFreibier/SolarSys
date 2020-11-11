@@ -22,7 +22,7 @@ public class Planet {
     private ArrayList<Rescource> rescourcen;
     private ArrayList<Gas> gase;
     
-    public Planet( int position, int groeße, int masse, int gravitation, int temperatur, int bewohnbarkeit){
+    public Planet(int position, int groeße, int masse, int gravitation, int temperatur, int bewohnbarkeit){
         setGroeße(groeße);
         setMasse(masse);
         setGravitation(gravitation);
@@ -34,33 +34,33 @@ public class Planet {
         this.gase = new ArrayList<Gas>();
     }
     
-    public static void randomTemp(String args[]){
+    public void randomTemp(int args[]){
      Random temperatur = new Random();
      int t = temperatur.nextInt(10)+1;
-        System.out.println(t);
+     System.out.println(t);
     }
-    public static void randomBewohn(String args[]){
+    public static void randomBewohn(int args[]){
      Random bewohnbarkeit = new Random();
      int b = bewohnbarkeit.nextInt(10)+1;
      System.out.println(b);
     }
-    public static void randomGroeße(String args[]){
+    public static void randomGroeße(int args[]){
      Random groeße = new Random();
      int g = groeße.nextInt(10)+1;
      System.out.println(g);
     }
-    public static void randomMasse(String args[]){
+    public static void randomMasse(int args[]){
      Random masse = new Random();
      int m = masse.nextInt(10)+1;
      System.out.println(m);
     }
-    public static void randomGravitation(String args[]){
+    public static void randomGravitation(int args[]){
      Random gravitation = new Random();
      int g = gravitation.nextInt(10)+1;
      System.out.println(g);
     }
    
-    public static void randomPosition(String args[]){
+    public static void randomPosition(int args[]){
      Random position = new Random();
      int laenge = position.nextInt();
      int breite = position.nextInt();

@@ -26,7 +26,7 @@ public final class Stern {
 
     
     
-    public static void randomLeuchtkraft(String args[]){
+    public static void randomLeuchtkraft(int args[]){
      Random leuchtkraft = new Random();
      int l = leuchtkraft.nextInt(10)+1;
         System.out.println(l);
@@ -37,12 +37,12 @@ public final class Stern {
         System.out.println(t);
     }
     
-    public static void randomGoeße(String args[]){
+    public static void randomGroeße(int args[]){
      Random groeße = new Random();
      int g = groeße.nextInt(10)+1;
         System.out.println(g);
     }
-    public static void randomPosition(String args[]){
+    public static void randomPosition(int args[]){
      Random position = new Random();
      int laenge = position.nextInt();
      int breite =position.nextInt();

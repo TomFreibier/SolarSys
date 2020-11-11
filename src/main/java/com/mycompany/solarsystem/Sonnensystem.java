@@ -22,12 +22,24 @@ public class Sonnensystem {
         this.planeten = new ArrayList<Planet>();
     }
     
-    public ArrayList getSterne(){
-        return this.sterne;
+    
+    
+    public void newStern(int position, String typ, int leuchtkraft, int groeße){
+        Stern neuerStern = new Stern(position, typ, leuchtkraft, groeße);
+        this.sterne.add(neuerStern);
+    }
+    
+    public void newPlanet(int position, int groeße, int masse, int gravitation, int temperatur, int bewohnbarkeit){
+        Planet neuerPlanet = new Planet(position, groeße, masse, gravitation, temperatur, bewohnbarkeit);
+        this.planeten.add(neuerPlanet);
     }
     
     public void addStern(Stern newStern){
         this.sterne.add(newStern);
+    }
+    
+    public ArrayList getSterne(){
+        return this.sterne;
     }
     
     public void removeStern(Stern Stern){
@@ -43,7 +55,7 @@ public class Sonnensystem {
     }
     
     public void removeAsteroidenGuertel(AsteroidenGuertel AsteroidenGuertel){
-        this.asteroidenGuertel.remove(AsteroidenGuertel);
+       this.asteroidenGuertel.remove(AsteroidenGuertel);
     }
     
     public ArrayList getPlanet(){

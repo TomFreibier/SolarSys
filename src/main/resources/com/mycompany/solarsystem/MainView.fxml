@@ -3,13 +3,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.solarsystem.MainViewController">
+<AnchorPane id="AnchorPane" onDragDetected="#btnExit" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.solarsystem.MainViewController">
    <children>
-      <Button layoutX="263.0" layoutY="171.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="75.0" text="travel" />
-      <Button layoutX="263.0" layoutY="219.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="75.0" text="new system" />
-      <Button layoutX="263.0" layoutY="267.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="75.0" text="new star" />
-      <Button layoutX="263.0" layoutY="316.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="75.0" text="new planet" />
-      <Button layoutX="269.0" layoutY="367.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="exit" />
+      <Button layoutX="263.0" layoutY="171.0" mnemonicParsing="false" onAction="#btnTravel" prefHeight="42.0" prefWidth="75.0" text="travel" />
+      <Button layoutX="263.0" layoutY="219.0" mnemonicParsing="false" onAction="#btnNewSystem" prefHeight="42.0" prefWidth="75.0" text="new system" />
+      <Button layoutX="263.0" layoutY="267.0" mnemonicParsing="false" onAction="#btnNewStern" prefHeight="42.0" prefWidth="75.0" text="new stern" />
+      <Button layoutX="263.0" layoutY="316.0" mnemonicParsing="false" onAction="#btnNewPlanet" prefHeight="42.0" prefWidth="75.0" text="new planet" />
+      <Button layoutX="269.0" layoutY="367.0" mnemonicParsing="false" onAction="#btnExit" prefHeight="25.0" prefWidth="62.0" text="exit" />
       <Button layoutX="523.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnSwitchToOptions" prefHeight="42.0" prefWidth="62.0" text="options" />
    </children>
 </AnchorPane>
