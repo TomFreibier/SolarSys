@@ -37,14 +37,14 @@ public class MainViewController implements Initializable {
     public void btnNewPlanet(int index, Planet p){
        ArrayList<Sonnensystem> XSystem = App.getGalaxie().getSysteme();
        Sonnensystem ASystem = XSystem.get(index);
-       ASystem.newPlanet(p.randomPosition(), p.randomGroeße(),p.randomMasse(),p.randomGravitation(),p.randomTemp(), g.randomBewohn());
+       ASystem.newPlanet(p.randomPosition(), p.randomGroeße(),p.randomMasse(),p.randomGravitation(),p.randomTemp(), p.randomBewohn());
     }
     
     public void btnNewStern(int index, Stern s){
        ArrayList<Sonnensystem> XSystem = App.getGalaxie().getSysteme();
        Sonnensystem ASystem = XSystem.get(index);
        
-       ASystem.newStern(s.randomLeuchtkraft(), s.randomTyp(), s.randomGroeße(), s.randomPosition(), s.randomPosition());
+       ASystem.newStern(s.randomLeuchtkraft(), s.randomTyp(), s.randomGroeße(), s.randomPosition());
        
     }
     

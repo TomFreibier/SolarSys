@@ -26,27 +26,31 @@ public final class Stern {
 
     
     
-    public static void randomLeuchtkraft(int args[]){
-     Random leuchtkraft = new Random();
-     int l = leuchtkraft.nextInt(10)+1;
-        System.out.println(l);
+    public int randomLeuchtkraft(){
+        int Min = 1;
+        int Max = 10;
+        
+        int Wert = Min + (int)(Math.random() * ((Max - Min) + 1));
+        return Wert;
     }
-    public static void randomTyp(String args[]){
-     Random typ = new Random();
-     int t = typ.nextInt(10)+1;
-        System.out.println(t);
+    public String randomTyp(){
+        String Wert = "Planet";
+        return Wert;
     }
     
-    public static void randomGroeße(int args[]){
-     Random groeße = new Random();
-     int g = groeße.nextInt(10)+1;
-        System.out.println(g);
+    public int randomGroeße(){
+        int Min = 1;
+        int Max = 10;
+        
+        int Wert = Min + (int)(Math.random() * ((Max - Min) + 1));
+        return Wert;
     }
-    public static void randomPosition(int args[]){
-     Random position = new Random();
-     int laenge = position.nextInt();
-     int breite =position.nextInt();
-        System.out.println(laenge + " " + breite);
+    public int randomPosition(){
+        int Min = 1;
+        int Max = 10;
+        
+        int Wert = Min + (int)(Math.random() * ((Max - Min) + 1));
+        return Wert;
     }
     
     //Getter

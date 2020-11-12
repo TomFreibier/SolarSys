@@ -34,37 +34,49 @@ public class Planet {
         this.gase = new ArrayList<Gas>();
     }
     
-    public void randomTemp(int args[]){
-     Random temperatur = new Random();
-     int t = temperatur.nextInt(10)+1;
-     System.out.println(t);
+    public int randomTemp(){
+        int Min = 1;
+        int Max = 10;
+        
+        int Wert = Min + (int)(Math.random() * ((Max - Min) + 1));
+        return Wert;
     }
-    public static void randomBewohn(int args[]){
-     Random bewohnbarkeit = new Random();
-     int b = bewohnbarkeit.nextInt(10)+1;
-     System.out.println(b);
+    public int randomBewohn(){
+     int Min = 1;
+        int Max = 10;
+        
+        int Wert = Min + (int)(Math.random() * ((Max - Min) + 1));
+        return Wert;
     }
-    public static void randomGroeße(int args[]){
-     Random groeße = new Random();
-     int g = groeße.nextInt(10)+1;
-     System.out.println(g);
+    public int randomGroeße(){
+     int Min = 1;
+        int Max = 10;
+        
+        int Wert = Min + (int)(Math.random() * ((Max - Min) + 1));
+        return Wert;
     }
-    public static void randomMasse(int args[]){
-     Random masse = new Random();
-     int m = masse.nextInt(10)+1;
-     System.out.println(m);
+    public int randomMasse(){
+     int Min = 1;
+        int Max = 10;
+        
+        int Wert = Min + (int)(Math.random() * ((Max - Min) + 1));
+        return Wert;
     }
-    public static void randomGravitation(int args[]){
-     Random gravitation = new Random();
-     int g = gravitation.nextInt(10)+1;
-     System.out.println(g);
+    public int randomGravitation(){
+        int Min = 1;
+        int Max = 10;
+        
+        int Wert = Min + (int)(Math.random() * ((Max - Min) + 1));
+        return Wert;
     }
    
-    public static void randomPosition(int args[]){
-     Random position = new Random();
-     int laenge = position.nextInt();
-     int breite = position.nextInt();
-     System.out.println(laenge + " " + breite );
+    public int randomPosition(){
+        int Min = 1;
+        int Max = 10;
+        
+        int position = Min + (int)(Math.random() * ((Max - Min) + 1));
+        return position;
+     
     }
     //Getter
     public int getGroeße() {
